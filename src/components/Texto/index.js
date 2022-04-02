@@ -3,13 +3,8 @@ import React from 'react';
 import { View } from 'react-native';
 import { StyleSheet, Text } from 'react-native';
 
-export default function Texto({ children, style }) {
-  let styles = style.texto;
-
-  if (style?.fontWeight === 'bold') {
-    style = styles.textoNegrito;
-  }
-  return <Text style={[style, styles.texto]}>{children}</Text>;
+export default function Texto({ children }) {
+  return <Text style={styles.texto}>{children}</Text>;
 }
 
 const styles = StyleSheet.create({

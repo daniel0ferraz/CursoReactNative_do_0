@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-export default function Button({ children }) {
+export default function Button({ children, onPress }) {
   return (
-    <TouchableOpacity style={estilos.botao}>
+    <TouchableOpacity style={estilos.botao} onPress={onPress}>
       <Text style={estilos.textoBotao}>{children}</Text>
     </TouchableOpacity>
   );

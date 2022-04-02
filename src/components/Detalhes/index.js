@@ -22,7 +22,7 @@ export default function Detalhes({
       <Text style={estilos.descricao}>{descricao}</Text>
       <Text style={estilos.preco}>{preco}</Text>
 
-      <Button>{botao}</Button>
+      <Button onPress={() => console.log('Comprar')}>{botao}</Button>
     </>
   );
 }

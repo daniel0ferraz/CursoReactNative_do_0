@@ -3,6 +3,7 @@ import { StatusBar, SafeAreaView, Text } from 'react-native';
 
 import Cesta from './src/screens/Cesta';
 import Mock from './src/Mocks/cesta';
+import Itens from './src/components/Itens';
 
 export default function App() {
   if (!Mock) {
@@ -10,7 +11,7 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1 }}>
       <StatusBar />
       <Cesta {...Mock} />
     </SafeAreaView>
